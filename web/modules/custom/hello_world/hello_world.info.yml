@@ -1,0 +1,8 @@
+name: Hello World
+description: This is a simple hello World Drupal 9 module.. 1, 2, 3.
+type: module
+package: custom
+core_version_requirement: ^9.0
+# dependencies:
+# - drupal: views
+# - ctools: ctools
