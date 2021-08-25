@@ -1,0 +1,7 @@
+# THEMENAME.info.yml file for Ice Cream example theme.
+name: Ice Cream
+type: theme
+base theme: classy
+description: "A great theme for rainy winter days here in Finland"
+package: Custom
+core_version_requirement: ^8 || ^9
