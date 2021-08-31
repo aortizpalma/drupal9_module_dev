@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\hello_world;
+namespace Drupal\goodbye_world;
 
 use Drupal\Core\Config\ConfigFactoryInterface;
 use Drupal\Core\StringTranslation\StringTranslationTrait;
@@ -9,7 +9,7 @@ use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 /**
  * Prepares the salutation to the world.
  */
-class HelloWorldSalutation {
+class GoodbyeWorldSalutation {
 
   use StringTranslationTrait;
 
@@ -28,7 +28,7 @@ class HelloWorldSalutation {
   protected $eventDispatcher;
 
   /**
-   * HelloWorldSalutation constructor.
+   * GoodbyeWorldSalutation constructor.
    *
    * @param \Drupal\Core\Config\ConfigFactoryInterface $config_factory
    *   The config factory.
@@ -58,15 +58,15 @@ class HelloWorldSalutation {
 
     $time = new \DateTime();
     if ((int) $time->format('G') >= 00 && (int) $time->format('G') < 12) {
-      return $this->t('Good morning world from Group Daddies');
+      return $this->t('Good morning world');
     }
 
     if ((int) $time->format('G') >= 12 && (int) $time->format('G') < 18) {
-      return $this->t('Good afternoon world from Group Daddies');
+      return $this->t('Good afternoon world');
     }
 
     if ((int) $time->format('G') >= 18) {
-      return $this->t('Good evening world from Group Daddies');
+      return $this->t('Good evening world');
     }
   }
 

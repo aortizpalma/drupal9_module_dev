@@ -1,5 +1,0 @@
-name: Goodbye World
-description: This is a simple hello World Drupal 9 module.
-type: module
-package: custom
-core_version_requirement: ^9.0

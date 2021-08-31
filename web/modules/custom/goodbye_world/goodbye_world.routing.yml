@@ -1,0 +1,14 @@
+goodbye_world.goodbye:
+  path: "/goodbye"
+  defaults:
+    _controller: Drupal\goodbye_world\Controller\GoodbyeWorldController::goodbyeWorld
+    _title: "Our first route"
+  requirements:
+    _permission: "access content"
+goodbye_world.greeting_form:
+  path: "/admin/config/farewell-configuration"
+  defaults:
+    _form: Drupal\goodbye_world\Form\FarewellConfigurationForm
+    _title: "Farewell configuration"
+  requirements:
+    _permission: "administer site configuration"

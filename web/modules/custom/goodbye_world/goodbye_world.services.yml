@@ -1,0 +1,9 @@
+services:
+  goodbye_world.farewell:
+    class: Drupal\goodbye_world\GoodbyeWorldFarewell
+    arguments: ["@config.factory", "@event_dispatcher"]
+  goodbye_world.redirect_subscriber:
+    class: \Drupal\goodbye_world\EventSubscriber\GoodbyeWorldRedirectSubscriber
+    arguments: ["@current_user", "@current_route_match"]
+    tags:
+      - { name: event_subscriber }

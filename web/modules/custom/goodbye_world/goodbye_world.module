@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @file
+ * Goodbye World module file.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function goodbye_world_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.goodbye_world':
+      $output = '';
+      $output .= '<h3>' . t('About Goodbye Wolrd') . '</h3>';
+      $output .= '<p>' . t('This is a new custom module bye Group Daddies.') . '</p>';
+      return $output;
+
+    default:
+  }
+}

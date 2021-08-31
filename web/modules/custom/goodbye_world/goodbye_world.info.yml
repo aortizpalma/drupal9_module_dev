@@ -1,0 +1,5 @@
+name: Goodbye World
+description: Goodbye World module
+type: module
+core_version_requirement: ^9
+package: Custom
