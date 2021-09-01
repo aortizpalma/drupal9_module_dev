@@ -2,7 +2,7 @@ goodbye_world.goodbye:
   path: "/goodbye"
   defaults:
     _controller: Drupal\goodbye_world\Controller\GoodbyeWorldController::goodbyeWorld
-    _title: "Our first route"
+    _title: "Our second route: Goodbye World module"
   requirements:
     _permission: "access content"
 goodbye_world.greeting_form:
