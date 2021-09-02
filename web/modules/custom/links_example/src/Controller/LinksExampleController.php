@@ -52,8 +52,9 @@ class LinksExampleController extends ControllerBase
         $output['links_example'] = [
             '#theme' => 'item_list',
             '#items' => $list,
-            '#items' => $this->t('Example of links in Drupal 9:'),
+            '#title' => $this->t('Examples of links:'),
         ];
+ 
         return $output;
     }
 
