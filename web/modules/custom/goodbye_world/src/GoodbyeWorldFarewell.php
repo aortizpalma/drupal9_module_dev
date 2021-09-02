@@ -51,7 +51,7 @@ class GoodbyeWorldFarewell {
     $farewell = $config->get('farewell');
     if ($farewell !== "" && $farewell) {
       $event = new FarewellEvent();
-      $event->setValue($salutation);
+      $event->setValue($farewell);
       $this->eventDispatcher->dispatch(FarewellEvent::EVENT, $event);
       return $event->getValue();
     }
