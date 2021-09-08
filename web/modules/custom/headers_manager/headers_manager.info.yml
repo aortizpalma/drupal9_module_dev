@@ -1,0 +1,5 @@
+name: Headers Manager
+description: Custom module to manage meta-info from head tag
+package: "Drupal Practice BCH class"
+type: module
+core_version_requirement: ^9
