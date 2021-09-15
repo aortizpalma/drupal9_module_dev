@@ -14,4 +14,5 @@
             console.log("Update-> will be processed the regular expression:");
         });
     });
+    
 })(jQuery, Drupal);
