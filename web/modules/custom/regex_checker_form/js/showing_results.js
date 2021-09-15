@@ -1,18 +1,18 @@
-(fucntion ($, Drupal) {
+(function ($, Drupal) {
     'use strict';
 
-    $(document).ready(function() {
-        console.log("Form is ready!");
+    $( document ).ready(function () {
+        console.log( "ready!" );
 
         $("#regexp_checker_button").click(() => {
-            let element = $('#regexp_checker_final_result');
+             let element = $("#regexp_checker_final_result");
 
-            // add some info over html element
-
-            element.html("<p><strong>Update-> will be processed with the regular expression:</strong></p>")
-            // for testing
-            console.log("Update-> will be processed the regular expression:");
+            // Add info over the HTML element.
+            element.html("<p> <strong>Update-> Will be processed the Regular Expression: </strong></p>");
+            // For testing.
+            console.log("Update-> Will be processed the Regular Expression: ");
         });
+
     });
-    
+
 })(jQuery, Drupal);

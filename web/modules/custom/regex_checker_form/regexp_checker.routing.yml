@@ -1,7 +1,7 @@
 regexp_checker.test_page:
   path: "/admin/config/development/regexp"
   defaults:
-    _forms: '\Drupal\regexp_cheker\Form\RegExpCheckerTestForm'
-    _title: "Regular Expression Testing Page Form"
+    _form: '\Drupal\regexp_checker\Form\RegExpCheckerTestForm'
+    _title: "Regular Expressions Testing Page"
   requirements:
     _permission: "playing with regexp"
