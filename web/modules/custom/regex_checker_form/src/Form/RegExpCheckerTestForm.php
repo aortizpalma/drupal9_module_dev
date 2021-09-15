@@ -56,6 +56,7 @@ class RegExpCheckerTestForm extends FormBase {
             '#suffix' => '</div>',
         ];
 
+        
         $form['regexp_checker_action'] = [
             '#type' => 'button',
             '#value' => $this->t('Check'),
