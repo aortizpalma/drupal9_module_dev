@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains regexp_checker.module
+ */
+
+ use Drupal\Core\Routing\RouteMatchInterface;
+
+ /**
+  * Implements hook help()
+  */
+  function regexp_checker_help($route_name, RouteMatchInterface $route_match) {
+      switch($route_name){
+          //main module help for regexp_checker module
+          case 'help.page.regexp_checker':
+            $output = '';
+            $output .= '<h3>'. t('About') . '</h3>';
+            $output .= '<p>' . t('It is an internal page for checking regular expression in Drupal just for tesing froms') . '</p>';
+            return $output;
+
+          default:
+      }
+  }

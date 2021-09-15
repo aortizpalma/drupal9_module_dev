@@ -1,0 +1,6 @@
+name: RegExp Checker
+type: module
+description: "Regular expression Drupal Checker form Example"
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: "Drupal Course"
