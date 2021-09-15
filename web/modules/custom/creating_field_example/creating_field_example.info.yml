@@ -1,0 +1,5 @@
+name: Creating Field Example
+type: module
+description: "Creating new field with plugin in Drupal 9"
+package: "Drupal Course ReactK21 Group"
+core_version_requirement: ^8 || ^9
